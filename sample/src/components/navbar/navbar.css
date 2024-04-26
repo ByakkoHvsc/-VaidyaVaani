@@ -1,0 +1,29 @@
+.navbar {
+    width: 100vw;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: sticky;
+    top: 0;
+    /* background-color: rgba(102, 23, 139, 0.1); */
+}
+
+.left {
+    width: 50vw;
+}
+
+.left img {
+    height: 80px;
+    width: auto;
+    padding-left: 20px;
+}
+
+.right {
+    width: 50vw;
+    justify-content: space-between;
+    padding-right: 20px;
+}
+.navLink {
+    padding: 50px;
+}

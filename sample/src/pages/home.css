@@ -1,0 +1,41 @@
+.Home {
+    display: flex;
+    flex-direction: column;
+    
+
+}
+.top {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 50vh;
+    background-color: rgba(230, 229, 226, 0.5);
+}
+.top .bg_Img {
+    width: auto;
+    height: 60%;
+    position: absolute;
+    z-index: -1;
+}
+.top h1 {
+    font-size: 3rem;
+    color: rgb(93, 23, 123);
+    padding: 20px;
+    border-radius: 20px;
+}
+input {
+    width: 500px;
+    height: 50px;
+    border-radius: 20px;
+    padding: 0 10px;
+}
+ul a {
+    text-decoration: none;
+    color: rgb(93, 23, 123);
+}
+li {
+    list-style: none;
+    margin: 0;
+    padding: 10px 0;
+}

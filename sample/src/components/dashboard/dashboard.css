@@ -1,0 +1,46 @@
+.dashboard-container {
+  text-align: center;
+}
+
+.welcome-text {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.button-container {
+  display: flex;
+  justify-content: center;
+}
+
+.dashboard-button {
+  background-color: #007bff;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  margin: 0 10px;
+  cursor: pointer;
+}
+
+.logout-button {
+  background-color: #007bff;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  margin: 0 10px;
+  cursor: pointer;
+}
+
+.logout-button:hover {
+  background-color: #0056b3;
+}
+
+.dashboard-button:hover {
+  background-color: #0056b3;
+}
+
+.dashboard  {
+  text-decoration: none;
+  color: #fff;
+}

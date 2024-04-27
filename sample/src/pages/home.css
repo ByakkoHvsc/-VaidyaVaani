@@ -1,8 +1,6 @@
 .Home {
     display: flex;
     flex-direction: column;
-    
-
 }
 .top {
     display: flex;
@@ -10,6 +8,7 @@
     align-items: center;
     justify-content: center;
     height: 50vh;
+    width: 100vw;
     background-color: rgba(230, 229, 226, 0.5);
 }
 .top .bg_Img {
@@ -25,7 +24,7 @@
     border-radius: 20px;
 }
 input {
-    width: 500px;
+    width: 300px;
     height: 50px;
     border-radius: 20px;
     padding: 0 10px;
@@ -35,7 +34,7 @@ ul a {
     color: rgb(93, 23, 123);
 }
 li {
+    display: flex;
     list-style: none;
-    margin: 0;
     padding: 10px 0;
 }

@@ -1,12 +1,13 @@
 .signin-page {
-
     max-width: 300px;
-    margin: auto;
-    margin-top: 250px;
+    margin: 50px 0;
     padding: 50px;
     border: 1px solid #ccc;
     border-radius: 5px;
    background: linear-gradient(rgb(150, 220, 227),rgb(177, 167, 248));
+   display: flex;
+   flex-direction: column;
+   align-items: center;
   }
   
   .signin-page h1 {
@@ -18,22 +19,13 @@
   
   .signin-page label {
     display: block;
-    margin-bottom: 10px;
-  }
-  
-  .signin-page[type="text"],
-  .signin-page input[type="password"] {
-    width: 100%;
-    padding: 8px;
-    margin-bottom: 10px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
+    margin: 20px 0 10px 0;
   }
   
   .signin-page button {
     width: 100%;
     padding: 10px;
-    background-color: #007bff;
+    margin-top: 20px;
     color: #fff;
     border: none;
     border-radius: 4px;

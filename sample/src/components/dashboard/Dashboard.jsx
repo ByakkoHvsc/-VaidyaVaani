@@ -9,6 +9,10 @@ const Dashboard = ({ doctorName }) => {
     
     navigate('/login');
   };
+  const handleChat = () => {
+    
+    navigate('/chat');
+  };
 
   return (
     <div className="dashboard-container">
@@ -16,6 +20,7 @@ const Dashboard = ({ doctorName }) => {
       <div className="button-container">
         <button className="dashboard-button"><Link to='/doctordashboard' className='dashboard'>Search By CR</Link></button>
         <button className="logout-button" onClick={handleLogout}>Logout</button>
+        <button className="chat-button" onClick={handleChat}>Chat</button>
 
       </div>
     </div>

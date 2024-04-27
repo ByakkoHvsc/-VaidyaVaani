@@ -1,0 +1,68 @@
+/* ... existing footer styles */
+
+.footer {
+    background-color: #b9bbbbad; /* Lighter background */
+    padding: 40px 0; /* Increase padding for content breathing room */
+    color: #333; /* Set default text color */
+  }
+  
+  .container {
+    max-width: 100vw;
+    margin: 0 auto;
+    display: flex; 
+    flex-wrap: wrap; 
+    justify-content: space-between; 
+  }
+  
+  .footer-content {
+    display: flex; 
+    flex-wrap: wrap; 
+    width: 100%; 
+    font-size: 15px;
+  }
+  
+  .footer-section {
+    flex: 1; 
+    margin: 15px;
+    text-align: justify; 
+  }
+  
+  .footer-title {
+    font-weight: bold;
+    font-size: 19px;
+    font-family: 'Times New Roman', Times, serif;
+    margin-bottom: 10px; /* Increase space between title and content */
+    color: #000; /* Darker color for titles */
+  }
+  
+  .footer-section p {
+    line-height: 1.5; /* Increase line height for better spacing */
+  }
+  
+  .contact-list,
+  .legal-list,
+  .social-links {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .contact-list li,
+  .legal-list li,
+  .social-links li {
+    margin-bottom: 5px;
+  }
+  
+  .social-links {
+    justify-content: flex-end; /* Align icons to the right */
+  }
+  
+  .social-links li {
+    margin-right: 15px; /* Increase spacing between social icons */
+  }
+  
+  .social-links a {
+    color: inherit; /* Inherit text color from footer background */
+  }
+  
+  /* Fixed the unclosed comment */

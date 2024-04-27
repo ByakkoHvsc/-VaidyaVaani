@@ -41,7 +41,7 @@ function Hospitals() {
   }
 
   return (
-    <div className="hospital-detail">
+    <div className="hospital-detail" style={{marginTop: '50px'}}>
       <h1>{hospital.name}</h1>
       <p>
         <strong>Location:</strong> {hospital.location}

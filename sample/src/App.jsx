@@ -8,6 +8,8 @@ import HospitalsList from "./pages/HospitalsList.jsx";
 import PatientRegistration from "./components/patientRegistration/PatientRegistration.jsx";
 import DoctorDashboard from "./components/doctorDashboard/DoctorDashboard.jsx";
 import Dashboard from "./components/dashboard/Dashboard.jsx";
+import SecureCommunication from "./components/SecureCommunication.jsx";
+import Footer from "./components/Footer/Footer.jsx";
 import { getAuth, createUserWithEmailAndPassword } from "firebase/auth";
 import { app } from "./firebase.js";
 import './App.css';
@@ -27,6 +29,8 @@ function App() {
   };
   return (
     <div className="App">
+       <div>
+    </div>
       <Router>
         <Navbar />
         <Routes>
@@ -38,10 +42,12 @@ function App() {
           <Route path="/register" element={<PatientRegistration />} />
           <Route path="/dashboard" element={<Dashboard />} />
           <Route path="/doctordashboard" element={<DoctorDashboard />} />
+          <Route path="/chat" element={<SecureCommunication />} />
+
         </Routes>
         {/* <SignupPage /> */}
         {/* <SigninPage /> */}
-       
+       <Footer/>
       </Router>
     </div>
   );

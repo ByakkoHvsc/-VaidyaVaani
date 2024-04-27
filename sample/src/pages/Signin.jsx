@@ -27,14 +27,14 @@ const SigninPage = () => {
     return (
         <div className="signin-page">
             <h1>Sign-in</h1>
-            <label>Enter your email</label>
+            <label>Email</label>
             <input
                 onChange={(e) => setEmail(e.target.value)}
                 value={email}
                 type="email"
                 placeholder="Enter your email"
             />
-            <label>Enter your password</label>
+            <label>Password</label>
             <input
                 onChange={(e) => setPassword(e.target.value)} // Added onChange handler
                 value={password}

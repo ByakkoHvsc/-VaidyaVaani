@@ -1,12 +1,12 @@
-// DoctorDashboard.jsx
-
 import React, { useState } from 'react';
+import './DoctorsDashboard.css'
 
 const DoctorDashboard = () => {
   const [crNumber, setCRNumber] = useState('');
   const [patientDetails, setPatientDetails] = useState(null);
   const [notes, setNotes] = useState('');
   const [prescription, setPrescription] = useState('');
+ 
 
   const handleSearch = () => {
     setPatientDetails({
@@ -29,7 +29,7 @@ const DoctorDashboard = () => {
   };
 
   return (
-    <div>
+    <div className='doctorDashboard'>
       <h2>Doctor Dashboard</h2>
       <div>
         <label>

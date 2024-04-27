@@ -1,13 +1,36 @@
-import React from "react";
+import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import { hospitals } from "../json_data/hospitalData"; 
 
 function HospitalsList() {
+  const [searchTerm, setSearchTerm] = useState("");
+  const [filteredHospitals, setFilteredHospitals] = useState(hospitals);
+
+  const handleSearchChange = (event) => {
+    setSearchTerm(event.target.value);
+    const filtered = hospitals.filter(
+      (hospital) =>
+        hospital.name.toLowerCase().includes(searchTerm.toLowerCase()) ||
+        hospital.location.toLowerCase().includes(searchTerm.toLowerCase())
+    );
+    setFilteredHospitals(filtered);
+  };
   return (
     <div className="hospitals-list">
-      <h1>List of Hospitals</h1>
+      <div className="Home">
+
+        {/* Search Input */}
+        <input
+          type="text"
+          placeholder="Search hospitals by name or location..."
+          value={searchTerm}
+          onChange={handleSearchChange}
+        />
+      </div>
+
+      {/* Hospital List */}
       <ul>
-        {hospitals.map((hospital) => (
+        {filteredHospitals.map((hospital) => (
           <li key={hospital.id}>
             <Link to={`/hospitals/${hospital.id}`}>
               {hospital.name} - {hospital.location}
